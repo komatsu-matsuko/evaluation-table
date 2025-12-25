@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>評価制度</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, sans-serif;
+            font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
             background-color: #f8f9fa;
             padding: 40px 20px;
             color: #1a2744;
         }
-
+        
         .container {
             max-width: 900px;
             margin: 0 auto;
         }
-
+        
         h1 {
             text-align: center;
             color: #1a2744;
@@ -31,7 +31,7 @@
             border-bottom: 3px solid #f4c542;
             padding-bottom: 15px;
         }
-
+        
         .category {
             margin-bottom: 35px;
             background: #fff;
@@ -39,7 +39,7 @@
             box-shadow: 0 2px 8px rgba(26, 39, 68, 0.1);
             overflow: hidden;
         }
-
+        
         .category-header {
             background: linear-gradient(135deg, #1a2744 0%, #2c3e5c 100%);
             color: #fff;
@@ -47,7 +47,7 @@
             font-size: 16px;
             font-weight: bold;
         }
-
+        
         .category-header .number {
             display: inline-block;
             background: #f4c542;
@@ -60,18 +60,18 @@
             margin-right: 10px;
             font-size: 14px;
         }
-
+        
         .category-header .subtitle {
             color: #f4c542;
             font-weight: normal;
             font-size: 14px;
         }
-
+        
         table {
             width: 100%;
             border-collapse: collapse;
         }
-
+        
         th {
             background: #f4c542;
             color: #1a2744;
@@ -81,18 +81,18 @@
             font-size: 14px;
             border-bottom: 2px solid #1a2744;
         }
-
+        
         th:first-child {
             width: 70px;
         }
-
+        
         td {
             padding: 14px 18px;
             border-bottom: 1px solid #e8e8e8;
             font-size: 14px;
             line-height: 1.6;
         }
-
+        
         td:first-child {
             text-align: center;
             font-weight: bold;
@@ -101,53 +101,40 @@
             color: #1a2744;
             border-right: 2px solid #f4c542;
         }
-
+        
         tr:last-child td {
             border-bottom: none;
         }
-
+        
         tr:hover td {
             background-color: #fffdf5;
         }
-
+        
         tr:hover td:first-child {
             background-color: #fef3c7;
         }
-
-        .score-5 td:first-child {
-            color: #1a6b3d;
-        }
-
-        .score-4 td:first-child {
-            color: #2980b9;
-        }
-
-        .score-3 td:first-child {
-            color: #7f8c8d;
-        }
-
-        .score-2 td:first-child {
-            color: #d68910;
-        }
-
-        .score-1 td:first-child {
-            color: #c0392b;
-        }
-
+        
+        .score-5 td:first-child { color: #1a6b3d; }
+        .score-4 td:first-child { color: #2980b9; }
+        .score-3 td:first-child { color: #7f8c8d; }
+        .score-2 td:first-child { color: #d68910; }
+        .score-1 td:first-child { color: #c0392b; }
+        
         .warning {
             color: #c0392b;
             font-weight: bold;
         }
-
+        
         .skull {
             font-size: 16px;
         }
-
+        
         @media print {
             body {
                 background: #fff;
                 padding: 20px;
             }
+            
             .category {
                 box-shadow: none;
                 border: 1px solid #ddd;
@@ -158,235 +145,242 @@
 </head>
 <body>
     <div class="container">
-        <h1></h1>
-
-        <!-- 業務の安定性 -->
+        <h1>評価制度</h1>
+        
+        <!-- ① 業務の安定性 -->
         <div class="category">
             <div class="category-header">
                 <span class="number">1</span>
-                <br><span class="subtitle"></span>
+                業務の安定性
+                <span class="subtitle">（＝ミス発生時に立て直せるか）</span>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
+                        <th>評価</th>
+                        <th>具体例</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="score-5">
                         <td>5</td>
-                        <td></td>
+                        <td>ミス発生時に原因を言語化し、チェック方法・手順を自ら改善。以後同種ミスが起きない</td>
                     </tr>
                     <tr class="score-4">
                         <td>4</td>
-                        <td></td>
+                        <td>指摘後すぐに修正し、再発防止策を実行できている</td>
                     </tr>
                     <tr class="score-3">
                         <td>3</td>
-                        <td></td>
+                        <td>修正対応はできるが、改善は指示待ちになる</td>
                     </tr>
                     <tr class="score-2">
                         <td>2</td>
-                        <td></td>
+                        <td>その場の修正のみで、同じミスを繰り返す</td>
                     </tr>
                     <tr class="score-1">
                         <td>1</td>
-                        <td><span class="warning"></span> <span class="skull"></span></td>
+                        <td><span class="warning">ミスを軽視・隠す・原因を他責にする <span class="skull">💀</span></span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
-        <!-- コミュニケーション -->
+        
+        <!-- ② コミュニケーション -->
         <div class="category">
             <div class="category-header">
                 <span class="number">2</span>
-                <br><span class="subtitle"></span>
+                コミュニケーション
+                <span class="subtitle">（＝仕事が止まらないか）</span>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
+                        <th>評価</th>
+                        <th>具体例</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="score-5">
                         <td>5</td>
-                        <td><br><br></td>
+                        <td>事前報連相が徹底され、相手が迷わず次の行動に移れる<br>挨拶（おはようございます／失礼します）が明瞭で、場の空気を止めない<br>集中状態を除き、応答の意思を感じられる</td>
                     </tr>
                     <tr class="score-4">
                         <td>4</td>
-                        <td></td>
+                        <td>基本は問題なし。要点がやや分かりづらいことがある</td>
                     </tr>
                     <tr class="score-3">
                         <td>3</td>
-                        <td><br></td>
+                        <td>必要最低限の報連相はできている<br>挨拶はしているが、声量・タイミングにムラがある</td>
                     </tr>
                     <tr class="score-2">
                         <td>2</td>
-                        <td><br></td>
+                        <td>質問・共有が遅く、締切直前に発覚することがある<br>無言で入退室する</td>
                     </tr>
                     <tr class="score-1">
                         <td>1</td>
-                        <td><span class="warning"><br></span></td>
+                        <td><span class="warning">結論不明・要件不明の連絡が多く、業務が止まる<br>無言で入退室する</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
-        <!-- 時間管理 -->
+        
+        <!-- ③ 時間管理 -->
         <div class="category">
             <div class="category-header">
                 <span class="number">3</span>
-                <br><span class="subtitle"></span>
+                時間管理
+                <span class="subtitle">（＝勤務時間、休憩時間、締切を守れるか）</span>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
+                        <th>評価</th>
+                        <th>具体例</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="score-5">
                         <td>5</td>
-                        <td></td>
+                        <td>すべて期限前完了。やむを得ない遅延リスクは必ず事前共有</td>
                     </tr>
                     <tr class="score-4">
                         <td>4</td>
-                        <td></td>
+                        <td>ほぼ厳守。繁忙時も調整相談ができている</td>
                     </tr>
                     <tr class="score-3">
                         <td>3</td>
-                        <td></td>
+                        <td>ギリギリだが、守れてはいる</td>
                     </tr>
                     <tr class="score-2">
                         <td>2</td>
-                        <td></td>
+                        <td>遅延が時々発生。事前相談が不足</td>
                     </tr>
                     <tr class="score-1">
                         <td>1</td>
-                        <td><span class="warning"></span></td>
+                        <td><span class="warning">無断遅延がある。信頼して任せられない</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
-        <!-- 問題解決力 -->
+        
+        <!-- ④ 問題解決力 -->
         <div class="category">
             <div class="category-header">
                 <span class="number">4</span>
-                <br><span class="subtitle"></span>
+                問題解決力
+                <span class="subtitle">（＝考えて動けるか）</span>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
+                        <th>評価</th>
+                        <th>具体例</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="score-5">
                         <td>5</td>
-                        <td>A・B</td>
+                        <td>問題点を整理し「AかBで迷っている」と選択肢提示ができる</td>
                     </tr>
                     <tr class="score-4">
                         <td>4</td>
-                        <td></td>
+                        <td>状況説明＋自分なりの仮案を持って相談できる</td>
                     </tr>
                     <tr class="score-3">
                         <td>3</td>
-                        <td></td>
+                        <td>問題は共有できるが、整理がやや甘い</td>
                     </tr>
                     <tr class="score-2">
                         <td>2</td>
-                        <td></td>
+                        <td>問題が起きてから丸投げ相談になりがち</td>
                     </tr>
                     <tr class="score-1">
                         <td>1</td>
-                        <td><span class="warning"></span></td>
+                        <td><span class="warning">問題を言語化できず、指示待ちになる</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
-        <!-- 協調性 -->
+        
+        <!-- ⑤ 協調性 -->
         <div class="category">
             <div class="category-header">
                 <span class="number">5</span>
-                <br><span class="subtitle"></span>
+                協調性
+                <span class="subtitle">（＝チームで仕事ができるか）</span>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
+                        <th>評価</th>
+                        <th>具体例</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="score-5">
                         <td>5</td>
-                        <td></td>
+                        <td>全体最優先で動き、他人の作業に配慮ができる。業務外の場も含め、チーム理解や関係構築の機会を前向きに活用している</td>
                     </tr>
                     <tr class="score-4">
                         <td>4</td>
-                        <td></td>
+                        <td>基本ルールを順守。指摘にも感情的にならず、冷静に対応</td>
                     </tr>
                     <tr class="score-3">
                         <td>3</td>
-                        <td></td>
+                        <td>協調性はあるが、視野が自分業務に寄りがち</td>
                     </tr>
                     <tr class="score-2">
                         <td>2</td>
-                        <td></td>
+                        <td>自分都合が目立ち、周囲に影響が出る。急な話かけが多い</td>
                     </tr>
                     <tr class="score-1">
                         <td>1</td>
-                        <td><span class="warning"></span></td>
+                        <td><span class="warning">指摘を感情的に受け取り、チームに悪影響。社内で部下やアルバイトの愚痴、悪口を言う</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
-        <!-- 業務改善提案 -->
+        
+        <!-- ⑥ 業務改善提案 -->
         <div class="category">
             <div class="category-header">
                 <span class="number">6</span>
-                <br><span class="subtitle"></span>
+                業務改善提案
+                <span class="subtitle">（＝仕組みをよくしようとしているか）</span>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
+                        <th>評価</th>
+                        <th>具体例</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="score-5">
                         <td>5</td>
-                        <td></td>
+                        <td>現行フローの課題を捉え、業務時間内外を問わず必要な検証・整理を自発的に行い、効率・品質が上がる提案を実装レベルで出す</td>
                     </tr>
                     <tr class="score-4">
                         <td>4</td>
-                        <td></td>
+                        <td>課題を指摘し、改善案を具体化できる</td>
                     </tr>
                     <tr class="score-3">
                         <td>3</td>
-                        <td></td>
+                        <td>問題提起はできるが、案が抽象的</td>
                     </tr>
                     <tr class="score-2">
                         <td>2</td>
-                        <td></td>
+                        <td>不満共有で止まり、改善視点が弱く愚痴寄り</td>
                     </tr>
                     <tr class="score-1">
                         <td>1</td>
-                        <td><span class="warning"></span></td>
+                        <td><span class="warning">現行ルールへの無関心・思考停止</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        
     </div>
 </body>
 </html>
