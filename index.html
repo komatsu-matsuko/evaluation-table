@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, sans-serif;
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            color: #1a2744;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a2744;
+            margin-bottom: 40px;
+            font-size: 28px;
+            border-bottom: 3px solid #f4c542;
+            padding-bottom: 15px;
+        }
+
+        .category {
+            margin-bottom: 35px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(26, 39, 68, 0.1);
+            overflow: hidden;
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, #1a2744 0%, #2c3e5c 100%);
+            color: #fff;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .category-header .number {
+            display: inline-block;
+            background: #f4c542;
+            color: #1a2744;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .category-header .subtitle {
+            color: #f4c542;
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #f4c542;
+            color: #1a2744;
+            padding: 12px 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            border-bottom: 2px solid #1a2744;
+        }
+
+        th:first-child {
+            width: 70px;
+        }
+
+        td {
+            padding: 14px 18px;
+            border-bottom: 1px solid #e8e8e8;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        td:first-child {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            background: #fef9e7;
+            color: #1a2744;
+            border-right: 2px solid #f4c542;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background-color: #fffdf5;
+        }
+
+        tr:hover td:first-child {
+            background-color: #fef3c7;
+        }
+
+        .score-5 td:first-child {
+            color: #1a6b3d;
+        }
+
+        .score-4 td:first-child {
+            color: #2980b9;
+        }
+
+        .score-3 td:first-child {
+            color: #7f8c8d;
+        }
+
+        .score-2 td:first-child {
+            color: #d68910;
+        }
+
+        .score-1 td:first-child {
+            color: #c0392b;
+        }
+
+        .warning {
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+        .skull {
+            font-size: 16px;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 20px;
+            }
+            .category {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+
+        <!-- 業務の安定性 -->
+        <div class="category">
+            <div class="category-header">
+                <span class="number">1</span>
+                <br><span class="subtitle"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning"></span> <span class="skull"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- コミュニケーション -->
+        <div class="category">
+            <div class="category-header">
+                <span class="number">2</span>
+                <br><span class="subtitle"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td><br><br></td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td><br></td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td><br></td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning"><br></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 時間管理 -->
+        <div class="category">
+            <div class="category-header">
+                <span class="number">3</span>
+                <br><span class="subtitle"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 問題解決力 -->
+        <div class="category">
+            <div class="category-header">
+                <span class="number">4</span>
+                <br><span class="subtitle"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td>A・B</td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 協調性 -->
+        <div class="category">
+            <div class="category-header">
+                <span class="number">5</span>
+                <br><span class="subtitle"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 業務改善提案 -->
+        <div class="category">
+            <div class="category-header">
+                <span class="number">6</span>
+                <br><span class="subtitle"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
