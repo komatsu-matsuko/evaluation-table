@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>業務評価表</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .category {
+            font-weight: bold;
+            color: #2c5282;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>業務評価表</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>評価項目</th>
+                <th>評価基準</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="category">① 業務の安定性<br><span class="subtitle">（＝ミス発生時に立て直せるか）</span></td>
+                <td>
+                    <strong>A:</strong> ミスをほぼせず、万が一ミスをした時もすぐに立て直せる<br>
+                    <strong>B:</strong> たまにミスをするが、指摘されれば修正できる<br>
+                    <strong>C:</strong> ミスが多く、指摘されても同じミスを繰り返す
+                </td>
+            </tr>
+            <tr>
+                <td class="category">② コミュニケーション<br><span class="subtitle">（＝仕事が止まらないか）</span></td>
+                <td>
+                    <strong>A:</strong> 自分から積極的に報告・連絡・相談ができる<br>
+                    <strong>B:</strong> 聞かれれば答えるが、自分からは報告しない<br>
+                    <strong>C:</strong> 聞いても答えず、仕事が止まることがある
+                </td>
+            </tr>
+            <tr>
+                <td class="category">③ 時間管理<br><span class="subtitle">（＝勤務時間、休憩時間、締切を守れるか）</span></td>
+                <td>
+                    <strong>A:</strong> 時間をしっかり守り、締切前に余裕を持って完了できる<br>
+                    <strong>B:</strong> だいたい守れるが、たまに遅れる<br>
+                    <strong>C:</strong> 頻繁に遅刻・締切遅れが発生する
+                </td>
+            </tr>
+            <tr>
+                <td class="category">④ 問題解決力<br><span class="subtitle">（＝考えて動けるか）</span></td>
+                <td>
+                    <strong>A:</strong> 問題が起きても自分で考えて解決できる<br>
+                    <strong>B:</strong> 簡単な問題は自分で解決できるが、難しい問題は人に聞く<br>
+                    <strong>C:</strong> 自分で考えず、すぐに人に頼る
+                </td>
+            </tr>
+            <tr>
+                <td class="category">⑤ 協調性<br><span class="subtitle">（＝チームで仕事ができるか）</span></td>
+                <td>
+                    <strong>A:</strong> チームの一員として積極的に協力し、周囲をサポートできる<br>
+                    <strong>B:</strong> 言われたことはやるが、自分から協力はしない<br>
+                    <strong>C:</strong> 協力的でなく、チームの雰囲気を悪くする
+                </td>
+            </tr>
+            <tr>
+                <td class="category">⑥ 業務改善提案<br><span class="subtitle">（＝仕組みをよくしようとしているか）</span></td>
+                <td>
+                    <strong>A:</strong> 業務の問題点を見つけ、改善案を提案・実行できる<br>
+                    <strong>B:</strong> 問題は気づくが、提案までは至らない<br>
+                    <strong>C:</strong> 現状維持で、改善に興味を示さない
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
