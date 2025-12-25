@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>評価表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, sans-serif;
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            color: #1a2744;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #1a2744;
+            margin-bottom: 40px;
+            font-size: 28px;
+            border-bottom: 3px solid #f4c542;
+            padding-bottom: 15px;
+        }
+        .category {
+            margin-bottom: 35px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(26, 39, 68, 0.1);
+            overflow: hidden;
+        }
+        .category-header {
+            background: linear-gradient(135deg, #1a2744 0%, #2c3e5c 100%);
+            color: #fff;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .category-header .number {
+            display: inline-block;
+            background: #f4c542;
+            color: #1a2744;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        .category-header .subtitle {
+            color: #f4c542;
+            font-weight: normal;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background: #f4c542;
+            color: #1a2744;
+            padding: 12px 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            border-bottom: 2px solid #1a2744;
+        }
+        th:first-child {
+            width: 70px;
+        }
+        td {
+            padding: 14px 18px;
+            border-bottom: 1px solid #e8e8e8;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        td:first-child {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            background: #fef9e7;
+            color: #1a2744;
+            border-right: 2px solid #f4c542;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover td {
+            background-color: #fffdf5;
+        }
+        tr:hover td:first-child {
+            background-color: #fef3c7;
+        }
+        .score-5 td:first-child { color: #1a6b3d; }
+        .score-4 td:first-child { color: #2980b9; }
+        .score-3 td:first-child { color: #7f8c8d; }
+        .score-2 td:first-child { color: #d68910; }
+        .score-1 td:first-child { color: #c0392b; }
+        .warning {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .skull {
+            font-size: 16px;
+        }
+        @media print {
+            body {
+                background: #fff;
+                padding: 20px;
+            }
+            .category {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>評価表</h1>
+        
+        <div class="category">
+            <div class="category-header">
+                <span class="number">1</span>
+                品質・鮮度
+                <span class="subtitle">〜食材の状態〜</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>点数</th>
+                        <th>基準</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td>最高品質の食材を使用。鮮度抜群で、食材本来の風味が際立つ</td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td>良質な食材を使用。鮮度も良好で満足できる</td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td>標準的な食材。特に問題はないが、特別な印象もない</td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td>食材の質に若干の不安。鮮度にやや欠ける</td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning">食材の質が悪い <span class="skull">💀</span></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="number">2</span>
+                調理技術
+                <span class="subtitle">〜味付け・火入れ・盛り付け〜</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>点数</th>
+                        <th>基準</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td>完璧な調理技術。味のバランスが素晴らしく、<br/>火入れも的確で感動的な仕上がり</td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td>優れた調理技術。味付けが良く、丁寧に作られている</td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td>標準的な調理。特に問題はないが、<br/>際立った技術は感じられない</td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td>調理に粗さが目立つ。味付けや火入れに<br/>改善の余地がある</td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning">調理が不適切で食べられたものではない<br/>または食べる気が失せる</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="number">3</span>
+                創造性・独自性
+                <span class="subtitle">〜オリジナリティ〜</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>点数</th>
+                        <th>基準</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td>斬新で独創的。他では味わえない驚きと感動がある</td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td>工夫が見られ、オリジナリティがある</td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td>標準的。よくある料理だが、安定している</td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td>ありふれていて、特に印象に残らない</td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning">独自性がなく、つまらない</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="number">4</span>
+                コストパフォーマンス
+                <span class="subtitle">〜価格と内容のバランス〜</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>点数</th>
+                        <th>基準</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td>価格以上の価値がある。ABCランクの料理がこの価格で食べられるのは驚き</td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td>価格に見合った内容。満足度が高い</td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td>妥当な価格設定。普通のコスパ</td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td>やや割高に感じる</td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning">価格に見合わない。高すぎる</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="number">5</span>
+                雰囲気・サービス
+                <span class="subtitle">〜空間と接客〜</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>点数</th>
+                        <th>基準</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td>洗練された空間と完璧な接客。居心地が最高</td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td>良い雰囲気で、サービスも丁寧</td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td>普通の雰囲気とサービス。特に気になる点はない</td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td>雰囲気やサービスにやや難あり</td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning">居心地が悪い、またはサービスが不快</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="number">6</span>
+                総合評価
+                <span class="subtitle">〜また訪れたいか〜</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>点数</th>
+                        <th>基準</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-5">
+                        <td>5</td>
+                        <td>絶対にまた来たい。人にも薦めたい最高の体験</td>
+                    </tr>
+                    <tr class="score-4">
+                        <td>4</td>
+                        <td>また来たい。満足度が高い</td>
+                    </tr>
+                    <tr class="score-3">
+                        <td>3</td>
+                        <td>機会があれば来るかも。可もなく不可もなく</td>
+                    </tr>
+                    <tr class="score-2">
+                        <td>2</td>
+                        <td>あまり来たいとは思わない</td>
+                    </tr>
+                    <tr class="score-1">
+                        <td>1</td>
+                        <td><span class="warning">二度と来たくない</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
